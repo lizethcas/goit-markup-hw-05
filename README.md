@@ -1,2 +1,2 @@
-# goit-markup-hw-05
- ventana modal y formularios
+# goit-markup-hw-02
+ tara2:aplicar fuentes y colores HTML
