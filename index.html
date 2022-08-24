@@ -29,7 +29,7 @@
 
       <nav class="enlaces">
         <a href="index.html" id="estudio" class="menu estudio">Estudio</a>
-        <a href="portafolio.html"   class="menu portafolio">Portafolio</a>
+        <a href="portafolio.html" class="menu portafolio">Portafolio</a>
         <a href="#" class="menu contactos">Contactos</a>
       </nav>
 
@@ -300,63 +300,67 @@
     </section>
   </main>
   <footer>
-    <div class="social">
-      <address>
-        <div class="medios-contacto-portafolio">
-          <ul>
-            <li class="logo">WebStudio</li>
-            <li class="contacto">
-              Calz. Ticomán 500, Ciudad de <br> México, CDMX, México
-            </li>
-            <li class="contacto-dos">info@example.com</li>
-            <li class="contacto-dos">+52 55 5529 6000</li>
-          </ul>
+    <div class="contenedor_footer">
+      <a class="logo">WebStudio</a>
+      <div class="social">
+
+        <address>
+          <div class="medios-contacto-portafolio">
+            <ul>
+
+              <li class="contacto">
+                Calz. Ticomán 500, Ciudad de <br> México, CDMX, México
+              </li>
+              <li class="contacto-dos">info@example.com</li>
+              <li class="contacto-dos">+52 55 5529 6000</li>
+            </ul>
+          </div>
+        </address>
+
+
+        <div class="caja-redes">
+          <h4 class="titulo-redes">ENCUENTRENOS EN</h4>
+          <div class="equipo-redes">
+            <div class="redes-sociales">
+              <svg class="svg" viewBox="0 0 448 512">
+                <use xlink:href="./imagenes/icon.svg#instagram"></use>
+              </svg>
+            </div>
+            <div class="redes-sociales">
+              <svg class="svg" viewBox="0 0 448 512">
+                <use xlink:href="./imagenes/icon.svg#twitter"></use>
+              </svg>
+            </div>
+            <div class="redes-sociales">
+              <svg class="svg" viewBox="0 0 448 512">
+                <use xlink:href="./imagenes/icon.svg#facebook"></use>
+              </svg>
+            </div>
+            <div class="redes-sociales">
+              <svg class="svg" viewBox="0 0 448 512">
+                <use xlink:href="./imagenes/icon.svg#link"></use>
+              </svg>
+            </div>
+
+          </div>
+
         </div>
-      </address>
 
-
-      <div class="caja-redes">
-        <h4 class="titulo-redes">ENCUENTRENOS EN</h4>
-        <div class="equipo-redes">
-          <div class="redes-sociales">
-            <svg class="svg" viewBox="0 0 448 512">
-              <use xlink:href="./imagenes/icon.svg#instagram"></use>
+        <div class="boletin">
+          <h4 class="titulo-redes">SUSCRÍBASE al boletín informativo </h4>
+          <form>
+            <label for="">
+              <input class="input" type="email" name="email" placeholder="Correo electrónico">
+            </label>
+            <button class="suscribirse" type="submit">Suscríbase</button>
+            <svg class="enviar" viewBox="0 0 24 24">
+              <use xlink:href="./imagenes/icon.svg#enviar"></use>
             </svg>
-          </div>
-          <div class="redes-sociales">
-            <svg class="svg" viewBox="0 0 448 512">
-              <use xlink:href="./imagenes/icon.svg#twitter"></use>
-            </svg>
-          </div>
-          <div class="redes-sociales">
-            <svg class="svg" viewBox="0 0 448 512">
-              <use xlink:href="./imagenes/icon.svg#facebook"></use>
-            </svg>
-          </div>
-          <div class="redes-sociales">
-            <svg class="svg" viewBox="0 0 448 512">
-              <use xlink:href="./imagenes/icon.svg#link"></use>
-            </svg>
-          </div>
-
+          </form>
         </div>
+
 
       </div>
-
-      <div class="boletin">
-        <h4 class="titulo-redes">SUSCRÍBASE al boletín informativo </h4>
-        <form>
-          <label for="">
-            <input class="input" type="email" name="email" placeholder="Correo electrónico">
-          </label>
-          <button class="suscribirse" type="submit">Suscríbase</button>
-          <svg class="enviar"  viewBox="0 0 24 24">
-            <use xlink:href="./imagenes/icon.svg#enviar"></use>
-          </svg>
-        </form>
-      </div>
-
-
     </div>
 
   </footer>
@@ -372,37 +376,48 @@
 
       <h2 class="titulo_form">Deje sus datos, nos contactaremos con usted</h2>
       <form class="formulario">
-
-        <label>
-          Nombre: <br>
-          <input class="input" type="text" name="nombre" required>
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input class="input" type="text" name="nombre" id="nombre" required>
           <svg viewBox="0 0 18 18" class="input-icon">
             <use xlink:href="./imagenes/icon.svg#usuario"></use>
           </svg>
-        </label>
-        <label>
-          Teléfono: 
-          <input class="input" type="tel" name="telefono" required>
+
+        </div>
+        <label for="telefono">Teléfono: </label>
+        <div>
+          <input class="input" type="tel" name="telefono" id="telefono" required>
           <svg viewBox="0 0 18 18" class="input-icon">
             <use xlink:href="./imagenes/icon.svg#tel"></use>
           </svg>
-        </label>
-        <label>
-          E-mail: 
-          <input class="input" type="email" name="email" placeholder="E-mail" required>
+        </div>
+
+        <div>
+          <label for="email">E-mail:</label>
+          <input class="input" type="email" name="email" id="email" required>
           <svg viewBox="0 0 18 18" class="input-icon">
             <use xlink:href="./imagenes/icon.svg#email"></use>
           </svg>
-        </label>
-        <label>
-          Comentarios:
-          <textarea class="text-area" name="feedback" rows="5" placeholder="Introduzca el texto"></textarea>
-        </label>
 
-        <label class="terminos">
-          <input type="checkbox" name="terminos" value="reading" />
-          Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones
-        </label>
+        </div>
+
+        <div>
+          <label>Comentarios: </label>
+          <textarea class="text-area" name="feedback" rows="5" placeholder="Introduzca el texto"></textarea>
+        </div>
+
+        <div class="terminos">
+          <div class="checkbox"><input type="checkbox" name="terminos" value="reading" id="terminos" /></div>
+
+          <div class="descripcion_terminos">
+            <!-- <label for="terminos" ></label> -->
+
+            Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones
+          </div>
+        </div>
+
+
+
         <div class="boton_form">
           <button class="enviar" type="submit">Enviar</button>
         </div>
@@ -414,7 +429,7 @@
 
   </section>
 
-  
+
   <script src="./js/estudio.js"></script>
 
 </body>
